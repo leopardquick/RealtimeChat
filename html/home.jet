@@ -87,7 +87,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
 
-        socket = new ReconnectingWebSocket("ws://127.0.0.1:8080/ws", null, {debug: true, reconnectInterval: 3000});
+        socket = new ReconnectingWebSocket("ws://35.174.13.171/:8080/ws", null, {debug: true, reconnectInterval: 3000});
 
         document.getElementById("sendBtn").addEventListener("click", function () {
             if (!socket) {
